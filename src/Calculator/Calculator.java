@@ -7,13 +7,13 @@ public class Calculator {
         Scanner scanner = new Scanner(System.in);
         double number1, number2, result;
 
-        System.out.println("Enter first number: ");
+        System.out.print("Enter first number: ");
         number1 = scanner.nextDouble();
 
-        System.out.println("Enter operator (+, -, *, /): ");
+        System.out.print("Enter operator (+, -, *, /): ");
         char operator = scanner.next().charAt(0);
 
-        System.out.println("Enter second number: ");
+        System.out.print("Enter second number: ");
         number2 = scanner.nextDouble();
 
         switch (operator){
