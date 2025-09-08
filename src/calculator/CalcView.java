@@ -5,9 +5,10 @@ import java.awt.*;
 
 public class CalcView {
     public CalcView(){
-        JButton buttonDot1, buttonOne, buttonTwo, buttonThree, buttonFour, buttonFive, buttonSix, buttonSeven, buttonEight,
+        JButton buttonDot1, buttonZero, buttonOne, buttonTwo, buttonThree, buttonFour, buttonFive, buttonSix, buttonSeven, buttonEight,
                 buttonNine, buttonPlus, buttonMinus, buttonTimes, buttonDivide, buttonEquals, buttonDot2, buttonDot3;
         buttonDot1 = new JButton(".");
+        buttonZero = new JButton("0");
         buttonOne = new JButton("1");
         buttonTwo = new JButton("2");
         buttonThree = new JButton("3");
@@ -28,7 +29,7 @@ public class CalcView {
         JTextField jTextField = new JTextField();
 
         JPanel jPanel = new JPanel();
-        jPanel.setLayout(new GridLayout(4,4));
+        jPanel.setLayout(new GridLayout(4,4, 4, 4));
         jPanel.add(buttonPlus);
         jPanel.add(buttonMinus);
         jPanel.add(buttonTimes);
@@ -46,11 +47,13 @@ public class CalcView {
         jPanel.add(buttonThree);
         jPanel.add(buttonDot3);
 
+
         JFrame jFrame = new JFrame("Calculator");
         jFrame.setSize(400, 400);
         jFrame.add(BorderLayout.PAGE_START, jTextField);
         jFrame.add(BorderLayout.CENTER, jPanel);
         jFrame.add(BorderLayout.EAST, buttonEquals);
+        jFrame.add(BorderLayout.SOUTH, buttonZero);
         jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         jFrame.setVisible(true);
     }
