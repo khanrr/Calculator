@@ -5,8 +5,9 @@ import java.awt.*;
 
 public class CalcView {
     public CalcView(){
-        JButton buttonOne, buttonTwo, buttonThree, buttonFour, buttonFive, buttonSix, buttonSeven, buttonEight,
-                buttonNine, buttonPlus, buttonMinus, buttonTimes, buttonDivide, buttonEquals, buttonDot;
+        JButton buttonDot1, buttonOne, buttonTwo, buttonThree, buttonFour, buttonFive, buttonSix, buttonSeven, buttonEight,
+                buttonNine, buttonPlus, buttonMinus, buttonTimes, buttonDivide, buttonEquals, buttonDot2, buttonDot3;
+        buttonDot1 = new JButton(".");
         buttonOne = new JButton("1");
         buttonTwo = new JButton("2");
         buttonThree = new JButton("3");
@@ -21,7 +22,8 @@ public class CalcView {
         buttonTimes = new JButton("*");
         buttonDivide = new JButton("/");
         buttonEquals = new JButton("=");
-        buttonDot = new JButton(".");
+        buttonDot2 = new JButton(".");
+        buttonDot3 = new JButton(".");
 
         JTextField jTextField = new JTextField();
 
@@ -34,12 +36,15 @@ public class CalcView {
         jPanel.add(buttonSeven);
         jPanel.add(buttonEight);
         jPanel.add(buttonNine);
+        jPanel.add(buttonDot1);
         jPanel.add(buttonFour);
         jPanel.add(buttonFive);
         jPanel.add(buttonSix);
+        jPanel.add(buttonDot2);
         jPanel.add(buttonOne);
         jPanel.add(buttonTwo);
         jPanel.add(buttonThree);
+        jPanel.add(buttonDot3);
 
         JFrame jFrame = new JFrame("Calculator");
         jFrame.setSize(400, 400);
