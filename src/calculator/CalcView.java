@@ -1,7 +1,11 @@
 package calculator;
 
-import javax.swing.*;
-import java.awt.*;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+import java.awt.GridLayout;
+import java.awt.BorderLayout;
 
 public class CalcView {
     public final CalcCtrl ctrl;
@@ -217,7 +221,6 @@ public class CalcView {
         jPanel.add(buttonTwo);
         jPanel.add(buttonThree);
         jPanel.add(buttonClear);
-
 
         JFrame jFrame = new JFrame("Calculator");
         jFrame.setSize(400, 400);
